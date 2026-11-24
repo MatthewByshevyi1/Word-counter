@@ -12,16 +12,12 @@ public class WordCounter {
 
         for (String word : words) {
 
-        if (!counts.containsKey(word)) {
-            counts.put(word,1);
-        }
-        else {
-            counts.put(word,counts.get(word)+1);
-        }
-            // TODO:
-            // If the word exists, increase its count.
-            // Otherwise, add the word with a count of 1.
-
+            if (!counts.containsKey(word)) {
+                counts.put(word,1);
+            }
+            else {
+                counts.put(word,counts.get(word)+1);
+            }
         }
 
         // TODO: Print each word and its frequency.
